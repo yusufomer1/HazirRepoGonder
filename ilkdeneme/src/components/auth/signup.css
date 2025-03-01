@@ -1,0 +1,158 @@
+.signup-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  /* Arka planı bölmek için gradient ve film resimlerini birlikte kullan */
+  background: 
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 80%),
+  url('https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg'),
+  url('https://image.tmdb.org/t/p/w500/q719jXXEzOoYaps6babgKnONONX.jpg'),
+  url('https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg'),
+  url('https://image.tmdb.org/t/p/w500/3IGbjc5ZC5yxim5W0sFING2kdcz.jpg'),
+  url('https://image.tmdb.org/t/p/w500/q719jXXEzOoYaps6babgKnONONX.jpg'),
+  url('https://image.tmdb.org/t/p/w500/3IGbjc5ZC5yxim5W0sFING2kdcz.jpg');
+  /* Posterleri yatay bir şerit halinde diz */
+  background-size: 
+    cover,       /* Gradient tam ekran kaplasın */
+    300px auto, 
+    300px auto, 
+    300px auto, 
+    300px auto, 
+    300px auto, 
+    300px auto; 
+
+  /* Gradient tam ekran, film resimleri orta şeritte */
+  background-position: 
+    center, 
+    0% 50%, 
+    20% 50%, 
+    40% 50%, 
+    60% 50%, 
+    80% 50%, 
+    100% 50%;
+
+  /* Gradient ve film posterlerini tekrar ettirme */
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+
+  /* Siyah arka plan */
+  background-color: black;
+}
+
+.signup-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+
+
+.signup-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.signup-input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.signup-input:focus {
+  border-color: #007bff;
+}
+
+.signup-button {
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.success-message {
+  color: #28a745;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.signup-footer {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.signup-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+/* Avatar Selection Styles */
+.avatar-selection {
+  margin-bottom: 20px;
+}
+
+.avatars {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.avatar {
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border 0.3s;
+}
+
+.avatar:hover {
+  border-color: #4CAF50;
+}
+
+.selected {
+  border: 2px solid #4CAF50;  /* Seçili avatar için yeşil sınır */
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
